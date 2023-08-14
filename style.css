@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+p {
+  color: rgb(229, 201, 143);
+  font-size: 18px;
+  font-family: "Bacasime Antique", serif;
+}
+
+h2{
+  font-size: 20px;
+  color: rgb(229, 201, 143);
+  font-family: "Bacasime Antique", serif;
+}
+
+li,
+a,
+button {
+  font-family: "Bacasime Antique", serif;
+  color: rgb(229, 201, 143);
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  
+}
+
+/* Header + Navbar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding-bottom: 16px;
+}
+
+
+.logo {
+  cursor: pointer;
+  height: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 100%;
+  border-top: 2px solid rgba(255, 255, 255, 0.2); 
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  
+
+}
+
+li {
+  display: inline-block;
+  padding: 0px 20px;
+
+  
+}
+
+.nav_links{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav_links li a {
+  transition: all 1.5s;
+}
+
+.nav_links li a:hover {
+  text-decoration: underline;
+  color: #ffff;
+  
+}
+
+/* Hamburger Menu */
+
+.hamburger{
+  display: none;
+  height: 100%;
+  margin-left: auto;
+  padding: 0 16px;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(229, 201, 143);
+}
+
+
+
+
+/* Elementi comuni */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+
+.title {
+
+  text-align: center;
+  margin: 200px 0;
+}
+
+/*index */
+
+.image {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.35)),
+    url(img/background.jpg);
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+.section_container, .section_container_2 {
+  display: flex;
+  margin: 10%;
+  text-align: center;
+  align-items: center;
+}
+
+.section_img{
+  width: 60%;
+  padding: 10px;
+}
+.subtitle {
+  width: 50%;
+}
+
+
+/* Footer */
+
+footer {
+  margin-top: 50px;
+}
+
+.logo2 {
+  cursor: pointer;
+  height: 150px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.chi_siamo {
+   text-align: center;
+}
+
+
+
+.social_content {
+  text-align: center;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.contact_info li {
+  width: 100%;
+}
+
+.socialmedia_icons {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.end {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Matrimoni */
+
+.image2 {
+  height: 120vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.35)),
+    url(img/background-matrimonio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+}
+
+/* Battesimi e Comunioni*/
+
+.image3 {
+  height: 150vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.35)),
+    url(img/background-bat.jpg);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+/* Book Fotografici */
+
+.image4 {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.35)),
+    url(img/background-book.jpg);
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+/* Chi Sono */
+
+.cover{
+  display: flex;
+  flex-direction: row-reverse;
+ 
+
+}
+.cover_image {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url('img/io2.jpg');
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.35)),
+    url(img/io.jpg);
+    background-size: cover;
+}
+
+h1 {
+  color:rgb(229, 201, 143);
+  font-size:64px;
+  z-index: -1;
+  text-align: start;
+  text-align: center;
+  text-align: left;
+  margin-top: 400px;
+  margin-left: 100px;
+  font-family: 'Zeyada', cursive;
+ 
+}
+
+
+
+.bio{
+  text-align: center;
+  margin: 20% 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bio_image_container{
+  width:100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.bio_image_container img{
+  margin-top: 16px;
+}
+
+
+.bio_text-group{
+  width: 100%;
+}
+
+
+
+
+
+
+/* Contatti */ 
+
+
+.information{
+  text-align: center;  
+}
+
+.section_form_container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section_form_img{
+  width: 100%;
+  padding: 10px;
+}
+
+.section_form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.form_label {
+  font-family: "Bacasime Antique", serif;
+  color: rgb(229, 201, 143);
+  font-size: 22px;
+  margin-top: 16px;
+  display: flex;
+  margin-right: 130px;
+}
+
+
+input {
+  background: #0000;
+  outline: none;
+  border: none;
+  font-family: "Bacasime Antique", serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgb(229, 201, 143);
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+textarea{
+  background-color: black;
+  color: rgb(229, 201, 143);
+  font-size: 20px;
+}
+
+
+button{
+  align-self: center;
+  background-color: #e5c98f;
+  width: 120px;
+  height: 30px;
+  font-family: "Bacasime Antique", serif;
+  color: black;
+  font-size: 20px;
+  margin-top: 50px;
+  border: 1px solid #e5c98f; 
+  border-radius: 10px;
+}
+
+button:hover {
+  color: #e5c98f;
+  background-color:black; 
+  border: 1px solid #e5c98f;
+  cursor: pointer;
+  
+}
+
+.image5{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.35)),
+url(img/background.jpg);
+  background-size: cover;
+}
+
+/* Media queries */
+
+@media(max-width:1024px){
+  nav{
+  border: none;
+  }
+  .hamburger{
+    display:block;
+
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav_links {
+    position: fixed;
+    display: flex;
+    height: 70vh;
+    left: -100%;
+    top: 70px;
+    background-color: rgba(0, 0, 0, 1);
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+
+  }
+
+  .nav_links li{
+    margin: 16px 0;
+  }
+
+  .nav_links.active{
+    left: 0;
+  }
+
+  /* Battesimi e Comunioni*/
+
+  .image3 {
+  height: 110vh;  
+  }
+
+  /* Bio */
+  .cover_image {
+    width: 100%;
+    margin: 0;
+    height: 80vh;
+    background-position: center center;
+  }
+}
+
+@media(max-width:768px){
+  .section_container{
+    flex-wrap: wrap;
+  }
+  .section_container_2{
+    flex-direction: column-reverse;
+  }
+
+  .section_img{
+  width: 100%;
+  }
+  .subtitle {
+  width: 100%;
+  }
+
+  /* Index */
+  .image{
+    height: 70vh;
+  }
+  /* Matrimonio */
+  .image2{
+  height: 70vh;
+  }
+  /* Battesimi e Comunioni*/
+
+  .image3 {
+  height: 90vh;  
+  }
+}
+
+@media screen and (max-width:576px) {
+
+    /* Index */
+    .image{
+      height: 70vh;
+    }
+    /* Matrimonio */
+    .image2{
+    height: 70vh;
+    }
+    /* Battesimi e Comunioni*/
+
+    .image3 {
+      height: 70vh;  
+      }  
+    /* Book */  
+      .image4 {
+        height: 60vh;
+      }
+  /* Bio */
+.cover{
+  height: 100px;
+}
+  .cover_image {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  h1{
+    font-size: 3em;
+    margin: 0;
+   }
+
+
+ /*contatti*/
+
+
+.section_form_img{
+ width:100%;
+ margin:0px;  
+}
+
+}
+
+
+
+@media(max-width:375px){
+
+  /* Bio */
+
+  .cover_image {
+    background-position: right;
+  }
+
+
+.section_form_container{
+  width:100%;
+}
+  .form_label{
+    font-size: 1.5em;
+    text-align: left;
+   
+   
+  }
+
+  .contact_info li{
+    font-size: 0.9em;
+
+  }
+
+
+  .socialmedia_icons li{
+    width: 40%;
+
+  }
+}
+
+/* Home */
+
+
+
